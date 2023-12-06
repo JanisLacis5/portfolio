@@ -1,16 +1,103 @@
 .landing-page {
-    height: 86vh;
-    position: absolute;
-    top: 0;
-    left: -10%;
-    background-color: var(--main-grey);
-    border-radius: 0 0 512px 512px;
-    width: 120%;
-    z-index: -1;
+	height: 74vh;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 12vh;
 }
 
-.main-info {
-    background-color: red;
-    width: 200vh;
-    height: 10vh;
+.landing-shape {
+	position: absolute;
+	width: 120%;
+	height: 86vh;
+	z-index: -1;
+	top: 0;
+	border-radius: 0 0 256px 256px;
+	background-color: var(--main-grey);
+}
+
+.landing-main {
+	background-color: transparent;
+	width: 100%;
+	height: 50%;
+	padding: 0 3%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.landing-main > button:last-child {
+	height: fit-content;
+	width: fit-content;
+	background-color: var(--complimentary);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	transform: translateY(120%);
+	margin-right: 10%;
+	border-radius: 1.5rem;
+}
+
+.landing-main > button:last-child h5 {
+	font-weight: 300;
+	padding: 1rem 6rem;
+}
+
+.socials {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.socials > button {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background-color: var(--light-grey);
+	padding: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socials > button svg {
+	width: 100%;
+	height: 100%;
+}
+
+.info {
+	gap: 8rem;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.info span {
+	opacity: 0.25;
+}
+
+.janis-pic {
+	height: 100%;
+	aspect-ratio: 1;
+	background-color: var(--light-grey);
+	border-radius: 50%;
+}
+
+.description {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.description h3 {
+	font-weight: 300;
 }
