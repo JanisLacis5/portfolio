@@ -2,27 +2,27 @@ import "./navbar.css"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
-	return (
-		<nav>
-			<h3>lacis</h3>
-			<div>
-				<Link to="/">
-					<h6>About</h6>
-				</Link>
-				<Link to="/">
-					<h6>Skills</h6>
-				</Link>
-				<Link to="/">
-					<h6>Projects</h6>
-				</Link>
-				<Link to="/">
-					<h6>Services</h6>
-				</Link>
-				<Link to="/">
-					<h6>Contact</h6>
-				</Link>
-			</div>
-		</nav>
-	)
+    return (
+        <nav>
+            <h4>lacis</h4>
+            <div>
+                <Link to="/">
+                    <p>About</p>
+                </Link>
+                <Link to="/">
+                    <p>Skills</p>
+                </Link>
+                <Link to="/">
+                    <p>Projects</p>
+                </Link>
+                <Link to="/">
+                    <p>Services</p>
+                </Link>
+                <Link to="/">
+                    <p>Contact</p>
+                </Link>
+            </div>
+        </nav>
+    )
 }
 export default Navbar
