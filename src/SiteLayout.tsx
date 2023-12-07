@@ -4,17 +4,17 @@ import { Navbar } from "./Components"
 import "./index.css"
 
 const SiteLayout = () => {
-    const navigate = useNavigate()
+	const navigate = useNavigate()
 
-    useEffect(() => {
-        navigate("/landing")
-    }, [])
+	useEffect(() => {
+		navigate("/landing")
+	}, [])
 
-    return (
-        <main>
-            <Navbar />
-            <Outlet />
-        </main>
-    )
+	return (
+		<main>
+			<Navbar />
+			<Outlet />
+		</main>
+	)
 }
 export default SiteLayout
